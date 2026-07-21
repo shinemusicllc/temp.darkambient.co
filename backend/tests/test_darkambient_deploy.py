@@ -70,4 +70,5 @@ def test_update_script_fast_forwards_and_checks_health():
     assert "git merge --ff-only origin/main" in script
     assert "docker compose -f compose.yaml build app" in script
     assert "docker compose -f compose.yaml up -d app" in script
+    assert "--retry-all-errors" in script
     assert "https://temp.darkambient.co/api/health" in script

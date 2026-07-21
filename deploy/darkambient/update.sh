@@ -13,6 +13,6 @@ cd deploy/darkambient
 docker compose -f compose.yaml config --quiet
 docker compose -f compose.yaml build app
 docker compose -f compose.yaml up -d app
-curl --fail --silent --show-error --retry 12 --retry-delay 2 \
+curl --fail --silent --show-error --retry 12 --retry-delay 2 --retry-all-errors \
   https://temp.darkambient.co/api/health
 docker compose -f compose.yaml ps
