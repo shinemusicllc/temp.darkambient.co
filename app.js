@@ -45,8 +45,8 @@ const DETAIL_MIN_WIDTH = 360;
 const DETAIL_MAX_WIDTH = 760;
 const MAIL_LIST_MIN_WIDTH = 420;
 const AVATAR_PALETTES = [
-  { background: 'linear-gradient(135deg, #ff7b57 0%, #ff5528 100%)', color: '#fff7f5' },
-  { background: 'linear-gradient(135deg, #ff9a5a 0%, #f97316 100%)', color: '#fffaf4' },
+  { background: 'linear-gradient(135deg, #14b8a6 0%, #0f766e 100%)', color: '#f0fdfa' },
+  { background: 'linear-gradient(135deg, #ff9a5a 0%, #0d9488 100%)', color: '#f0fdfa' },
   { background: 'linear-gradient(135deg, #fb7185 0%, #e11d48 100%)', color: '#fff1f2' },
   { background: 'linear-gradient(135deg, #38bdf8 0%, #2563eb 100%)', color: '#eff6ff' },
   { background: 'linear-gradient(135deg, #34d399 0%, #059669 100%)', color: '#ecfdf5' },

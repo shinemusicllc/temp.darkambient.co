@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DarkAmbient User Inbox - kiểm tra nhanh email đuôi temp.darkambient.co">
   <title>DarkAmbient Inbox</title>
-  <link rel="icon" type="image/svg+xml" href="logo.svg?v=20260721-darkambient-brand">
-  <link rel="shortcut icon" href="logo.svg?v=20260721-darkambient-brand">
+  <link rel="icon" type="image/svg+xml" href="logo.svg?v=20260721-aurora-teal">
+  <link rel="shortcut icon" href="logo.svg?v=20260721-aurora-teal">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -14,16 +14,16 @@
         extend: {
           colors: {
             lush: {
-              50: '#fff7f5',
-              100: '#fff0eb',
-              200: '#ffd9cc',
-              300: '#ffb8a3',
-              400: '#ff8c6b',
-              500: '#ff5528',
-              600: '#e64a20',
-              700: '#cc3f18',
-              800: '#a33010',
-              900: '#7a2008',
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              200: '#99f6e4',
+              300: '#5eead4',
+              400: '#2dd4bf',
+              500: '#0f766e',
+              600: '#115e59',
+              700: '#134e4a',
+              800: '#0f3d3a',
+              900: '#082f2d',
             },
             marine: {
               950: '#0a1224',
@@ -44,7 +44,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <link rel="stylesheet" href="user.css?v=20260509-mobile-reader-1">
+  <link rel="stylesheet" href="user.css?v=20260721-aurora-teal">
 </head>
 <body class="font-inter antialiased text-slate-800 min-h-screen bg-white">
   <div class="min-h-screen">
@@ -52,7 +52,7 @@
       <div class="max-w-[1360px] mx-auto">
         <header class="lookup-nav flex items-center justify-between gap-4 py-6">
           <a href="user.html" class="flex items-center gap-3 min-w-0">
-            <img src="logo.svg?v=20260721-darkambient-brand" alt="DarkAmbient" class="w-11 h-11">
+            <img src="logo.svg?v=20260721-aurora-teal" alt="DarkAmbient" class="w-11 h-11">
             <div class="min-w-0">
               <p class="font-fustat text-[30px] leading-none font-bold text-white">DarkAmbient</p>
               <p class="mt-1 text-[11px] uppercase tracking-[0.28em] text-slate-300">User Inbox</p>
@@ -150,7 +150,7 @@
               </div>
             </aside>
 
-            <section class="desktop-detail-pane min-h-[620px] bg-[#fffdfa]">
+            <section class="desktop-detail-pane min-h-[620px] bg-[#fbfffe]">
               <div class="flex items-center justify-between border-b border-slate-200 px-5 py-4 sm:px-7">
                 <div>
                   <p class="text-[11px] font-semibold uppercase tracking-[0.24em] text-slate-400">Reading pane</p>
@@ -175,7 +175,7 @@
     </main>
   </div>
 
-  <div id="mobileDetail" class="mobile-reader fixed inset-0 z-50 hidden bg-[#fffdfa] lg:hidden" role="dialog" aria-modal="true" aria-label="Chi tiết email">
+  <div id="mobileDetail" class="mobile-reader fixed inset-0 z-50 hidden bg-[#fbfffe] lg:hidden" role="dialog" aria-modal="true" aria-label="Chi tiết email">
     <div class="mobile-reader-header sticky top-0 z-10 flex items-center gap-3 border-b border-slate-200 bg-white px-4 py-3">
       <button id="closeMobileDetailBtn" class="inline-flex h-10 w-10 items-center justify-center border border-slate-200 bg-slate-50 text-slate-600" type="button">
         <i data-lucide="arrow-left" class="w-5 h-5"></i>

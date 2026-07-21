@@ -141,8 +141,8 @@ body {
 }
 
 .user-message-row.selected {
-  background: #fff7f3;
-  box-shadow: inset 2px 0 0 #ff5528;
+  background: #f0fdfa;
+  box-shadow: inset 2px 0 0 #0f766e;
 }
 
 .user-message-main {
@@ -223,7 +223,7 @@ body {
 
 .detail-card {
   min-height: 100%;
-  background: #fffdfa;
+  background: #fbfffe;
 }
 
 .detail-meta {
@@ -238,7 +238,7 @@ body {
   border: 1px solid transparent;
   border-radius: 999px;
   background:
-    linear-gradient(#fffdfa, #fffdfa) padding-box,
+    linear-gradient(#fbfffe, #fbfffe) padding-box,
     linear-gradient(135deg, #4285f4 0%, #34a853 38%, #fbbc05 68%, #ea4335 100%) border-box;
   color: #64748b;
   display: inline-flex;
@@ -320,8 +320,8 @@ body {
 }
 
 .detail-attachment-item:hover {
-  background: #fffaf8;
-  color: #cc3f18;
+  background: #f8fffd;
+  color: #134e4a;
 }
 
 .detail-attachment-icon {
@@ -367,7 +367,7 @@ body {
   align-items: center;
   gap: 6px;
   flex-shrink: 0;
-  color: #cc3f18;
+  color: #134e4a;
   font-size: 12px;
   font-weight: 700;
 }

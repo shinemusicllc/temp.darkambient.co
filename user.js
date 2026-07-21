@@ -1,4 +1,4 @@
-﻿const state = {
+const state = {
   session: null,
   currentAlias: '',
   messages: [],
@@ -20,8 +20,8 @@ let userEventVersion = 0;
 const STREAM_RECONNECT_DELAY_MS = 2500;
 
 const AVATAR_PALETTES = [
-  { background: '#ff5528', color: '#fff7f5' },
-  { background: '#f97316', color: '#fffaf4' },
+  { background: '#0f766e', color: '#f0fdfa' },
+  { background: '#0d9488', color: '#f0fdfa' },
   { background: '#2563eb', color: '#eff6ff' },
   { background: '#059669', color: '#ecfdf5' },
   { background: '#7c3aed', color: '#f5f3ff' },
