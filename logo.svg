@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">DarkAmbient Logo</title>
+  <desc id="desc">Stylized DA monogram in orange</desc>
+  <g fill="#ff5528">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M28 28h54c57 0 96 40 96 100s-39 100-96 100H28V28zm32 30v140h22c39 0 64-27 64-70S121 58 82 58H60z"/>
+    <path d="M170 28h31l48 200h-32l-11-49h-51l-11 49h-32l48-200h10zm11 48-20 75h39l-19-75z"/>
+  </g>
+</svg>

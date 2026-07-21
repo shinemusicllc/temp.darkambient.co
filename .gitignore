@@ -1,0 +1,27 @@
+.venv/
+__pycache__/
+*.pyc
+data/
+deploy/.env
+deploy/LOCAL_PASSWORDS.md
+backend/.pytest_cache/
+.worktrees/
+deploy/darkambient/.env
+deploy/darkambient/credentials.txt
+deploy/darkambient/data/
+
+# Secrets and host-specific runtime state
+**/.env
+**/.env.*
+!**/*.env.example
+**/credentials.txt
+*.db
+*.sqlite
+*.sqlite3
+*.pem
+*.key
+*.pfx
+*.p12
+*.tgz
+*.tar.gz
+backups/

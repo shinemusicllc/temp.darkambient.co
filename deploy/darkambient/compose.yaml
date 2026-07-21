@@ -1,0 +1,53 @@
+name: darkambient-temp-mail
+
+services:
+  app:
+    container_name: darkambient-temp-app
+    build:
+      context: ../..
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:8012:8010"
+    volumes:
+      - ./data/app:/app/data
+    networks:
+      - darkambient_mail
+    depends_on:
+      mailserver:
+        condition: service_healthy
+
+  mailserver:
+    image: ghcr.io/docker-mailserver/docker-mailserver:15.1.0
+    container_name: darkambient-mailserver
+    hostname: mx.temp.darkambient.co
+    restart: unless-stopped
+    env_file:
+      - mailserver.env
+    ports:
+      - "25:25"
+    volumes:
+      - ./data/mail-data:/var/mail
+      - ./data/mail-state:/var/mail-state
+      - ./data/mail-logs:/var/log/mail
+      - ./data/dms-config:/tmp/docker-mailserver
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    cap_add:
+      - NET_ADMIN
+    stop_grace_period: 1m
+    healthcheck:
+      test: "ss --listening --tcp | grep -P 'LISTEN.+:smtp' || exit 1"
+      interval: 20s
+      timeout: 5s
+      retries: 6
+      start_period: 60s
+    networks:
+      darkambient_mail:
+        aliases:
+          - mx.temp.darkambient.co
+
+networks:
+  darkambient_mail:
+    name: darkambient_mail

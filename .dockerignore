@@ -1,0 +1,10 @@
+.git
+.worktrees
+.pytest_cache
+**/__pycache__/
+**/*.pyc
+
+# VPS runtime state must never be copied into the application image.
+deploy/darkambient/.env
+deploy/darkambient/credentials.txt
+deploy/darkambient/data/
