@@ -29,6 +29,7 @@
 ### Deploy / VPS
 - `deploy/AGENTS.md`
 - `deploy/darkambient/README.md` for the isolated `temp.darkambient.co` stack
+- Canonical GitHub origin: `https://github.com/shinemusicllc/temp.darkambient.co`
 - Canonical local checkout: `C:\Users\Cong-PC\Desktop\temp.darkambient.co`; canonical VPS checkout: `/opt/darkambient-temp-mail/app`
 - `docs/PROJECT_CONTEXT.md`
 
