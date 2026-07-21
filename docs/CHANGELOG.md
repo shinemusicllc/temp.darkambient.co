@@ -533,3 +533,10 @@
 - Fixed: Mobile reader is now the only scroll container while a message is open, with body scroll locked and iframe heights refreshed after the overlay opens.
 - Affected files: user.html, user.css, user.js, docs/PROJECT_BRIEF.md, docs/MEMORY_INDEX.md, docs/DECISIONS_INDEX.md, docs/UI_SYSTEM.md
 - Impact/Risk: low-medium; only the user inbox mobile layout/scroll behavior changed, desktop layout is intentionally preserved.
+
+### 2026-07-21 13:30 - apply_aurora_teal_theme
+- Added: Aurora Teal regression coverage for the Tailwind palette, static asset cache versions, logo color, and removal of the previous brand orange values.
+- Changed: Admin, user inbox, dynamic avatars, active/focus states, reader surfaces, and the `DA` monogram now use primary `#0f766e`, hover `#115e59`, and surface `#f0fdfa`.
+- Preserved: Mail behavior, API contracts, layout, marine user hero, destructive colors, amber OTP badges, and Google translation colors remain unchanged.
+- Affected files: index.html, user.html, style.css, user.css, app.js, user.js, logo.svg, backend/tests/test_branding.py, docs/UI_SYSTEM.md, docs/CHANGELOG.md.
+- Impact/Risk: low; this is a visual token migration with cache-busted assets and automated branding coverage.

@@ -1,8 +1,8 @@
 # UI System
 
 ## Product Language
-- DarkAmbient uses a clean mail-workspace style with a white content surface, slate borders/text, and orange `lush-500` actions.
-- Brand surfaces use the compact orange `DA` monogram and the `DarkAmbient` wordmark without changing established layout density.
+- DarkAmbient uses a clean mail-workspace style with a white content surface, slate borders/text, and Aurora Teal `lush-500` actions.
+- Brand surfaces use the compact teal `DA` monogram and the `DarkAmbient` wordmark without changing established layout density.
 - Admin is a dense inbox workspace. User mode is a simpler lookup-and-read flow.
 
 ## Layout Patterns
@@ -11,7 +11,8 @@
 - Avoid nested scroll regions on mobile unless the region is the active full-screen reader.
 
 ## Components
-- Primary buttons use solid orange.
+- Primary actions use Aurora Teal `#0f766e`; hover uses `#115e59`; subtle brand surfaces use `#f0fdfa`.
+- Semantic rose/red, amber OTP, Google translation colors, and the marine user hero remain independent of the brand palette.
 - Message rows use simple borders, avatar, sender, subject, preview, and relative time.
 - Detail views use sender meta, subject, timestamp, then rendered email body.
 
